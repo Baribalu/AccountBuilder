@@ -43,9 +43,22 @@ public class AccountBuilder {
 		followers.put("victor", new ArrayList<String>());
 		following.put("victor", new ArrayList<String>());
 		following.get("victor").add("andrei");//HARD
+		following.get("victor").add("bogdan");
 		account.setUsername("victor");
 		account.setPassword("victor");
 		account.setFullName("Victor Victor");
+		account.setAge(22);
+		return account;
+	}
+	
+	public static Account cristiAccount() {
+		Account account = new Account();
+		messages.put("cristi", new ArrayList<Message>());
+		followers.put("cristi", new ArrayList<String>());
+		following.put("cristi", new ArrayList<String>());
+		account.setUsername("cristi");
+		account.setPassword("cristi");
+		account.setFullName("Cristi Cristi");
 		account.setAge(22);
 		return account;
 	}
@@ -58,6 +71,7 @@ public class AccountBuilder {
 		accounts.add(andreiAccount());
 		accounts.add(bogdanAccount());
 		accounts.add(victorAccount());
+		accounts.add(cristiAccount());
 	}
 
 }

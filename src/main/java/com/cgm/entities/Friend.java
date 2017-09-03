@@ -42,11 +42,11 @@ public class Friend {
 		this.age = age;
 	}
 
-	public boolean isFriend() {
+	public boolean getIsFriend() {
 		return isFriend;
 	}
 
-	public void setFriend(boolean isFriend) {
+	public void setIsFriend(boolean isFriend) {
 		this.isFriend = isFriend;
 	}
 	
