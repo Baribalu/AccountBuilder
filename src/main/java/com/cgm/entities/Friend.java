@@ -1,6 +1,8 @@
 package com.cgm.entities;
 
-public class Friend {
+import java.io.Serializable;
+
+public class Friend implements Serializable {
 
 	private String username;
 	private String fullName;
